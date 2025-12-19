@@ -1,0 +1,12 @@
+# API Server Requirements
+# Author: RSK World
+# Website: https://rskworld.in
+# Email: help@rskworld.in
+# Phone: +91 93305 39277
+
+flask>=2.3.0
+flask-cors>=4.0.0
+pillow>=10.0.0
+numpy>=1.24.0
+tensorflow>=2.15.0
+gunicorn>=21.2.0

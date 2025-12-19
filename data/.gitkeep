@@ -1,0 +1,10 @@
+# Data directory
+# Author: RSK World - https://rskworld.in
+# 
+# This directory contains generated datasets for the TensorFlow Deep Learning project.
+# Generated data files (*.npy, *.csv) are ignored by git but the directory structure is kept.
+# 
+# To generate data, run:
+#   python scripts/generate_data_standalone.py
+#
+# See data/README.md for more information.

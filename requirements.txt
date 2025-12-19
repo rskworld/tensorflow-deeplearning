@@ -1,0 +1,19 @@
+# TensorFlow Deep Learning Project Requirements
+# Author: RSK World
+# Website: https://rskworld.in
+# Email: help@rskworld.in
+# Phone: +91 93305 39277
+
+tensorflow>=2.15.0
+keras>=2.15.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+jupyter>=1.0.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+pillow>=10.0.0
+seaborn>=0.12.0
+pyyaml>=6.0
+pytest>=7.4.0
+tensorflowjs>=4.15.0
+keras-tuner>=1.4.0

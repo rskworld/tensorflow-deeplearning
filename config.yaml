@@ -1,0 +1,60 @@
+# TensorFlow Deep Learning Project Configuration
+# Author: RSK World
+# Website: https://rskworld.in
+# Email: help@rskworld.in
+# Phone: +91 93305 39277
+
+# Model Configuration
+model:
+  input_shape: [224, 224, 3]
+  num_classes: 10
+  batch_size: 32
+  epochs: 50
+
+# Training Configuration
+training:
+  learning_rate: 0.001
+  optimizer: "adam"
+  loss: "sparse_categorical_crossentropy"
+  metrics: ["accuracy"]
+  validation_split: 0.2
+  early_stopping:
+    enabled: true
+    patience: 5
+    monitor: "val_loss"
+  checkpoint:
+    enabled: true
+    save_best_only: true
+    monitor: "val_loss"
+
+# Data Configuration
+data:
+  train_dir: "./data/train"
+  val_dir: "./data/val"
+  test_dir: "./data/test"
+  image_size: [224, 224]
+  augmentation:
+    rotation_range: 20
+    width_shift_range: 0.2
+    height_shift_range: 0.2
+    horizontal_flip: true
+    zoom_range: 0.2
+
+# Paths
+paths:
+  models_dir: "./models"
+  logs_dir: "./logs"
+  checkpoints_dir: "./checkpoints"
+  data_dir: "./data"
+
+# API Configuration
+api:
+  host: "0.0.0.0"
+  port: 5000
+  debug: false
+
+# Deployment
+deployment:
+  format: "savedmodel"  # savedmodel, h5, tflite
+  quantization: false
+  optimize: true

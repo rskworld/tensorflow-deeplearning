@@ -1,0 +1,29 @@
+# Docker ignore file
+# Author: RSK World - https://rskworld.in
+
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info
+dist
+build
+.venv
+venv
+env
+ENV
+.git
+.gitignore
+*.md
+.DS_Store
+*.log
+logs/
+.ipynb_checkpoints
+*.ipynb_checkpoints
+.vscode
+.idea
+*.swp
+*.swo
